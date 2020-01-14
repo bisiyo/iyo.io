@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <TITLE>Iyo Bisseck</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/button.css" rel="stylesheet" />
+    <script src='js/jquery.min.js'></script>
+    <link rel="icon" href="img/favicon_grand.gif" type="image/gif">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="conteneur">
+        <div class="element" style="border-bottom: 1px solid black;  flex: 0.4; z-index: 8; background: white; ">
+            <ul class="navbaro fermé" onclick="opencloseinfo()">
+                <li>
+                    <div class="tooltip" onmouseover="changedescri()"><a>IYO BISSECK</a>
+                        <span class="tooltiptext">is a french interactive designer based in Switzerland.</span>
+                    </div>
+                </li>
+                <li class="lang"><a style="padding-right: 0.5vw; font-weight: lighter;">+</a></li>
+            </ul>
+            <div class="biographie">
+                <div id="description">
+                    <div style="padding-left: 1vh">I'm an interaction designer, virtual reality searcher, machine learning lover, webdesigner and artist. I'm working at the crossroads of different fields such as art, social sciences, cognitive sciences and computer science. I'm particularly interested in inclusive and activist projects.</div>
+                    <br> <a href="mailto:hello@iyo.io" target="_top" style="text-decoration: none;color: black;position: relative;left: 40%;">hello@iyo.io</a>
+                    <br><br>
+                    <div class="vertical-menu">
+                        <a class="active">EXHIBITIONS</a>
+                        <a href="http://netzforma.org/wenn-ki-dann-feministisch" target="_blank" class="legame"><span class="droite">Nov 2, 2019.</span><span class="gauche">
+                                <div>Exhibition of the Human Detector at University of Arts, Berlin, Germany during the Wenn KI, dann feministisch</div>
+                            </span> </a>
+                        <a href="http://www.eeeeh.ch/bureau-des-questions-importantes-242/" target="_blank" class="legame"><span class="droite">Oct 5, 2019.</span><span class="gauche">
+                                <div>Exhibition of the Human Detector at Galerie Eeeeh during the Bureau des questions importants, Nyon, Switzerland.</div>
+                            </span> </a>
+                        <a href="https://www.numerik-games.ch/festival/" target="_blank" class="legame"><span class="droite"> Aug 30 - 31, 2019.</span><span class="gauche">
+                                <div>Exhibition of Nguon Celebration at Numerik Games,
+                                    Yverdons-les bains, Switzerland.</div>
+                            </span> </a>
+                        <a class="active">PRESS</a>
+                        <a href="https://share.hek.ch/en/ai-can-you-see-me/?_sft_category=guest-post" target="_blank" class="legame"><span class="droite"> Sep 2, 2019.</span><span class="gauche">
+                                <div>Publication of a post about my search «AI, can you see me ? » for the blog of Hek, Haus der elektronischen Künste Basel, in Basel, Switerland.</div>
+                            </span> </a>
+                        <a class="active">LECTURE</a>
+                        <a href="http://www.eeeeh.ch/bureau-des-questions-importantes-242/" target="_blank" class="legame"><span class="droite"> Oct 5, 2019.</span><span class="gauche">
+                                <div>Talk about «AI, Can you see me ?» at Galerie Eeeeh, Nyon, Switzerland.</div>
+                            </span> </a>
+                        <a href="https://www.hek.ch/fr/programme/events-fr/event/ai-night-powered-by-pechakucha-2.html" target="_blank" class="legame"><span class="droite"> May 24, 2019.</span><span class="gauche">
+                                <div>Talk about «AI, Can you see me ?» at AI Night, PechaKucha powered by Hek, Haus der elektronischen Künste Basel,
+                                    in Basel, Switerland.
+                                </div>
+                            </span> </a>
+                    </div>
+                </div>
+                <div id="portrait"> <iframe id="iyoimage" title="Play with me" frameborder="0" src="profil.html">
+                    </iframe></div>
+                <a class="bascontact" href="mailto:hello@iyo.io" target="_top"> </a>
+            </div>
+        </div>
+        <div class="element" style="flex: 0.5; border-bottom: 1px solid black; z-index: 8; background: white; position: relative;">
+            <!--  <div class="tooltip" style="padding: 2.7vh; padding-top: 2.9vh; cursor: pointer; font-size: 2vh"><a href="mailto:hello@iyo.io" target="_top" style="text-decoration: none;color: black">Contact</a>
+            </div> -->
+            <div style="position:relative; left:50%; transform: translate(-50%,1.2vh); -moz-transform : translate(-50%,0.4vh); height: 100%; color: black" id="navproject"></div>
+        </div>
+        <div class="element" style="background-color: white; color: black; border-bottom: 1px solid black; flex: 10; position: relative;">
+            <div class="blockimage" onclick="changeimage()" style="z-index: 3; left:0px; top:0vh">
+                <div class="imageA">
+                    <video id="vidvid" autoplay="false" controls loop controlsList="nodownload">
+                        <source src="img/clouds.mp4" type="video/mp4">
+                    </video> </div>
+                <div class="imageB isrotate" onclick="changeimage()" style="z-index: 3; left:0px; top:0vh">
+                    <video id="vidvid2" autoplay="false" controls loop controlsList="nodownload">
+                        <source src="img/clouds.mp4" type="video/mp4">
+                    </video> </div>
+            </div>
+            <div class="blocktext" id="textgoch">
+                <div>
+                    <div class="text">
+                        <div class="title">Titre</div>
+                        <div class="type">Info</div>
+                        <div class="info">balalabalalabalalabalalabal alabalalabalala balalabalala balalabalalab alalabalala balalabalala balalabalalabal ala</div>
+                    </div>
+                </div>
+            </div>
+            <div class="blocktext" id="textdroite">
+                TEXTE 2
+            </div>
+        </div>
+    </div>
+    <script src="js/content.js"></script>
+    <!--     <script src='js/wheel-indicator.js'></script>
+    <script src="js/jquery.touchSwipe.js"></script>
+    <script src="js/cubeTransition.js"></script> -->
+</body>
+
+</html>
