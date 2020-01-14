@@ -1,0 +1,7 @@
+//{
+//     "0": "Nom",
+//     "1": "Texte",
+//     "2": "Support",
+//     "3": "[img,img,img]"
+//     "4": "degree_colorbutton"
+// },
