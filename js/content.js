@@ -93,7 +93,7 @@ window.onresize = function() {
         if (phone) {
 
             if (imgblocks[0].style.top == "50%") {} else {
-                imgblocks[0].style.left = "30%";
+                imgblocks[0].style.left = "31%";
             }
             imgblocks[0].style.top = "0vh"
 
@@ -164,8 +164,8 @@ function changeproject(bnb) {
         if (imgblocks.parentNode.style.left == "0px") {
             document.querySelector("#vidvid").style.right = "0";
             document.querySelector("#vidvid").style.left = "unset";
-            imgblocks.parentNode.style.left = "30%";
-        } else if (imgblocks.parentNode.style.left == "30%") {
+            imgblocks.parentNode.style.left = "31%";
+        } else if (imgblocks.parentNode.style.left == "31%") {
             imgblocks.parentNode.style.left = "0px";
             document.querySelector("#vidvid").style.left = "0";
             document.querySelector("#vidvid").style.right = "unset";
@@ -185,7 +185,7 @@ function updatetext() {
     if (window.innerWidth > 500) {
         if (imgblocks[0].style.left == "0px") {
             document.getElementById("textgoch").innerHTML = textout.innerHTML;
-        } else if (imgblocks[0].style.left == "30%") {
+        } else if (imgblocks[0].style.left == "31%") {
             document.getElementById("textdroite").innerHTML = textout.innerHTML;
         }
     } else {

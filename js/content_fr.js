@@ -36,7 +36,7 @@ window.onresize = function() {
     } else {
         if (phone) {
             if (imgblocks[0].style.top == "48.5vh") {} else {
-                imgblocks[0].style.left = "30%";
+                imgblocks[0].style.left = "31%";
             }
             phone = false;
         }
@@ -86,8 +86,8 @@ function changeproject(bnb) {
         } else {
 
             if (imgblocks[i].style.left == "0px") {
-                imgblocks[i].style.left = "30%";
-            } else if (imgblocks[i].style.left == "30%") {
+                imgblocks[i].style.left = "31%";
+            } else if (imgblocks[i].style.left == "31%") {
                 imgblocks[i].style.left = "0px";
             }
         }
@@ -106,7 +106,7 @@ function updatetext() {
     if (window.innerWidth > 500) {
         if (imgblocks[0].style.left == "0px") {
             document.getElementById("textgoch").innerHTML = textout.innerHTML;
-        } else if (imgblocks[0].style.left == "30%") {
+        } else if (imgblocks[0].style.left == "31%") {
             document.getElementById("textdroite").innerHTML = textout.innerHTML;
         }
     } else {
